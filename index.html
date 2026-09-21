@@ -1,115 +1,127 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fabrication Tools Hindi | Engineering Calculators</title>
-<meta name="description" content="Free fabrication and engineering calculators in Hindi: plate, pipe, angle, channel, round bar, welding, MIG wire, costing, GST and material cost.">
+<title>Fabrication Tools Hindi — Engineering Calculators</title>
+<meta name="description" content="Professional fabrication and engineering calculators for plate, pipe, angle, channel, welding, MIG wire, costing and GST.">
 <style>
-:root{--dark:#111827;--dark2:#1f2937;--accent:#f59e0b;--bg:#f4f6f8;--card:#fff;--text:#17202a;--muted:#64748b}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
-header{position:sticky;top:0;z-index:10;background:rgba(17,24,39,.97);color:#fff;padding:15px 6%;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{font-size:21px;font-weight:800}.logo span{color:var(--accent)}
-nav a{color:#e5e7eb;text-decoration:none;margin-left:20px;font-size:14px}
-.hero{background:linear-gradient(135deg,#111827,#334155);color:#fff;padding:72px 6% 65px}
-.hero-inner{max-width:1150px;margin:auto}.badge{display:inline-block;background:#ffffff18;border:1px solid #ffffff30;padding:8px 12px;border-radius:99px;font-size:13px}
-h1{font-size:46px;line-height:1.1;max-width:850px;margin:18px 0 15px}.hero p{max-width:760px;color:#dbe3ec;font-size:18px;line-height:1.6}
-.btn{display:inline-block;background:var(--accent);color:#111827;text-decoration:none;padding:13px 20px;border-radius:9px;font-weight:800;margin-top:10px}
-.container{max-width:1150px;margin:auto;padding:48px 20px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:22px}.section-head h2{margin:0;font-size:30px}.section-head p{margin:0;color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.card{background:var(--card);border:1px solid #e5e7eb;border-radius:15px;padding:22px;box-shadow:0 8px 25px #0000000a}
-.card h3{margin:0 0 8px}.card p{color:var(--muted);line-height:1.5}.icon{font-size:30px;margin-bottom:10px}
-.tool{scroll-margin-top:90px}.tool h3{font-size:20px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-label{font-size:13px;color:#475569;font-weight:700}input,select{width:100%;padding:11px;margin:5px 0 10px;border:1px solid #cbd5e1;border-radius:8px;font-size:14px}
-button{border:0;background:var(--dark);color:#fff;padding:11px 16px;border-radius:8px;font-weight:800;cursor:pointer}.result{background:#fff7e6;border:1px solid #fed7aa;border-radius:9px;padding:12px;margin-top:12px;font-weight:800}
-.guide{min-height:180px}.guide a{color:#b45309;text-decoration:none;font-weight:700}
-footer{background:var(--dark);color:#cbd5e1;padding:35px 6%;margin-top:20px}footer strong{color:#fff}
-@media(max-width:700px){nav{display:none}h1{font-size:34px}.formgrid{grid-template-columns:1fr}.hero{padding-top:50px}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:#f7f8fa;color:#172033}
+:root{--navy:#0b1220;--blue:#2563eb;--blue2:#1d4ed8;--orange:#f59e0b;--line:#e6eaf0;--muted:#687386;--card:#fff}
+header{height:72px;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 6%;position:sticky;top:0;z-index:50;backdrop-filter:blur(10px)}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:19px;color:var(--navy)}.brandmark{width:39px;height:39px;border-radius:10px;background:var(--navy);color:white;display:grid;place-items:center;font-size:19px}
+.brand span{color:var(--blue)}nav{display:flex;gap:25px}nav a{text-decoration:none;color:#4b5565;font-size:14px;font-weight:600}nav a:hover{color:var(--blue)}
+.hero{background:radial-gradient(circle at 85% 25%,#294b93 0,#172a52 25%,#0b1220 63%);color:white;overflow:hidden}
+.hero-inner{max-width:1180px;margin:auto;padding:82px 25px 75px;display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid #ffffff25;background:#ffffff0d;border-radius:999px;padding:8px 13px;font-size:12px;color:#dbeafe;font-weight:700}
+h1{font-size:52px;line-height:1.05;letter-spacing:-1.5px;margin:18px 0 17px}.hero p{font-size:18px;line-height:1.7;color:#cbd5e1;max-width:680px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:13px 19px;border-radius:9px;text-decoration:none;font-weight:800;font-size:14px}.primary{background:var(--blue);color:white}.secondary{border:1px solid #ffffff35;color:white;background:#ffffff08}
+.hero-panel{background:#ffffff0b;border:1px solid #ffffff20;border-radius:20px;padding:24px;box-shadow:0 25px 70px #0006}.mini-head{display:flex;justify-content:space-between;color:#dbeafe;font-size:12px;margin-bottom:16px}
+.metric{display:grid;grid-template-columns:1fr 1fr;gap:10px}.metric div{background:#ffffff0b;border:1px solid #ffffff15;border-radius:12px;padding:15px}.metric strong{display:block;font-size:21px}.metric small{color:#94a3b8}
+.container{max-width:1180px;margin:auto;padding:58px 25px}.section-top{display:flex;justify-content:space-between;align-items:end;margin-bottom:24px}.section-top h2{margin:0;font-size:29px}.section-top p{margin:7px 0 0;color:var(--muted)}
+.search{width:260px;padding:12px 14px;border:1px solid var(--line);border-radius:9px;background:white}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:21px;transition:.2s;box-shadow:0 7px 22px #11182708}.card:hover{transform:translateY(-3px);box-shadow:0 13px 30px #11182712}
+.tool-icon{width:45px;height:45px;border-radius:11px;background:#eff6ff;color:var(--blue);display:grid;place-items:center;font-size:22px;margin-bottom:16px}.card h3{margin:0 0 7px;font-size:17px}.card p{margin:0 0 17px;color:var(--muted);font-size:13px;line-height:1.55}.open{color:var(--blue);font-weight:800;font-size:13px;text-decoration:none}
+.feature{background:white;border:1px solid var(--line);border-radius:18px;padding:27px;display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}.feature h2{font-size:30px;margin:0 0 12px}.feature p{color:var(--muted);line-height:1.7}.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:11px}.feature-list div{padding:13px;background:#f8fafc;border-radius:9px;font-size:13px;font-weight:700}
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.guide{min-height:180px}.tag{display:inline-block;color:#1d4ed8;background:#eff6ff;border-radius:99px;padding:5px 9px;font-size:11px;font-weight:800;margin-bottom:12px}
+.cta{background:linear-gradient(120deg,#1d4ed8,#0b1220);color:white;border-radius:20px;padding:40px;display:flex;justify-content:space-between;align-items:center;gap:25px}.cta h2{margin:0 0 8px}.cta p{margin:0;color:#cbd5e1}
+footer{background:#0b1220;color:#94a3b8;padding:35px 6%;margin-top:20px}.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:25px}.footer-brand{color:white;font-weight:800}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.hero-inner{grid-template-columns:1fr}.feature{grid-template-columns:1fr}.guide-grid{grid-template-columns:1fr 1fr}h1{font-size:42px}}
+@media(max-width:600px){header{padding:0 18px}nav{display:none}.container{padding:42px 17px}.hero-inner{padding:60px 17px}.grid,.guide-grid{grid-template-columns:1fr}.section-top{display:block}.search{width:100%;margin-top:15px}h1{font-size:36px}.cta{display:block;padding:28px}.footer-inner{display:block}}
 </style>
 </head>
 <body>
-<header><div class="logo">⚙️ Fabrication <span>Tools Hindi</span></div><nav><a href="#calculators">Calculators</a><a href="#guides">Guides</a><a href="#about">About</a></nav></header>
+<header>
+<div class="brand"><div class="brandmark">⚙</div>Fabrication <span>Tools Hindi</span></div>
+<nav><a href="#tools">Tools</a><a href="#guides">Guides</a><a href="#why">Why Us</a><a href="#contact">Contact</a></nav>
+</header>
 
-<section class="hero"><div class="hero-inner">
-<span class="badge">FREE • Practical Engineering Tools</span>
-<h1>Fabrication & Engineering Calculators — Simple Hindi Mein</h1>
-<p>Workshop aur fabrication ke liye useful calculators, formulas aur practical guides. Material weight, welding, costing aur GST calculations ek jagah.</p>
-<a class="btn" href="#calculators">🔧 Calculators Start Karein</a>
-</div></section>
+<section class="hero">
+<div class="hero-inner">
+<div>
+<div class="eyebrow">● FREE ENGINEERING TOOLS · HINDI + ENGLISH</div>
+<h1>Fabrication calculations.<br><span style="color:#60a5fa">Made simple.</span></h1>
+<p>Professional calculators and practical guides for fabrication, welding, workshop costing and material calculations — built for engineers, fabricators and workshop teams.</p>
+<div class="hero-actions"><a class="btn primary" href="#tools">Explore Tools →</a><a class="btn secondary" href="#guides">View Guides</a></div>
+</div>
+<div class="hero-panel">
+<div class="mini-head"><span>FABRICATION TOOLS</span><span>LIVE</span></div>
+<div class="metric">
+<div><strong>10+</strong><small>Calculators</small></div>
+<div><strong>100%</strong><small>Free to use</small></div>
+<div><strong>Fast</strong><small>Instant results</small></div>
+<div><strong>Practical</strong><small>Workshop focused</small></div>
+</div>
+</div>
+</div>
+</section>
 
-<section class="container" id="calculators">
-<div class="section-head"><div><h2>🔧 10 Useful Calculators</h2><p>Values enter karein aur turant approximate result paayein.</p></div></div>
-<div class="grid">
+<section class="container" id="tools">
+<div class="section-top"><div><h2>Popular Engineering Tools</h2><p>Choose a calculator and get an instant approximate result.</p></div><input class="search" id="search" placeholder="Search tools..." oninput="filterTools()"></div>
+<div class="grid" id="toolGrid">
+<div class="card tool" data-name="plate sheet weight"><div class="tool-icon">▦</div><h3>MS Plate Weight</h3><p>Calculate approximate weight of steel plate from dimensions and quantity.</p><a class="open" href="#plate">Open Tool →</a></div>
+<div class="card tool" data-name="pipe weight"><div class="tool-icon">◉</div><h3>Pipe Weight</h3><p>Estimate pipe weight using OD, thickness, length and quantity.</p><a class="open" href="#pipe">Open Tool →</a></div>
+<div class="card tool" data-name="angle weight"><div class="tool-icon">∟</div><h3>Angle Weight</h3><p>Estimate equal angle section weight for fabrication jobs.</p><a class="open" href="#angle">Open Tool →</a></div>
+<div class="card tool" data-name="channel weight"><div class="tool-icon">⊏</div><h3>Channel Weight</h3><p>Approximate channel weight from section dimensions and length.</p><a class="open" href="#channel">Open Tool →</a></div>
+<div class="card tool" data-name="round bar weight"><div class="tool-icon">●</div><h3>Round Bar Weight</h3><p>Calculate round bar weight from diameter, length and quantity.</p><a class="open" href="#round">Open Tool →</a></div>
+<div class="card tool" data-name="electrode welding"><div class="tool-icon">⚡</div><h3>Electrode Consumption</h3><p>Get an approximate welding electrode consumption estimate.</p><a class="open" href="#electrode">Open Tool →</a></div>
+<div class="card tool" data-name="mig wire welding"><div class="tool-icon">⌁</div><h3>MIG Wire Consumption</h3><p>Estimate MIG wire requirement using weld length and area.</p><a class="open" href="#mig">Open Tool →</a></div>
+<div class="card tool" data-name="fabrication cost costing"><div class="tool-icon">₹</div><h3>Fabrication Cost</h3><p>Combine material, labour, consumables and overhead costs.</p><a class="open" href="#cost">Open Tool →</a></div>
+<div class="card tool" data-name="gst tax"><div class="tool-icon">%</div><h3>GST Calculator</h3><p>Calculate GST amount and total invoice value quickly.</p><a class="open" href="#gst">Open Tool →</a></div>
+<div class="card tool" data-name="material cost"><div class="tool-icon">▤</div><h3>Material Cost</h3><p>Estimate material cost with optional wastage percentage.</p><a class="open" href="#material">Open Tool →</a></div>
+</div>
+</section>
 
-<div class="card tool"><div class="icon">🔩</div><h3>MS Plate Weight</h3><div class="formgrid">
-<div><label>Length (mm)</label><input id="pl" type="number" value="2000"></div><div><label>Width (mm)</label><input id="pw" type="number" value="1000"></div>
-<div><label>Thickness (mm)</label><input id="pt" type="number" value="12"></div><div><label>Qty</label><input id="pq" type="number" value="1"></div></div><button onclick="plate()">Calculate</button><div class="result" id="pr">—</div></div>
-
-<div class="card tool"><div class="icon">⚙️</div><h3>Pipe Weight</h3><div class="formgrid">
-<div><label>OD (mm)</label><input id="od" type="number" value="60"></div><div><label>Thickness (mm)</label><input id="pith" type="number" value="3"></div>
-<div><label>Length (m)</label><input id="pil" type="number" value="6"></div><div><label>Qty</label><input id="piq" type="number" value="1"></div></div><button onclick="pipe()">Calculate</button><div class="result" id="pir">—</div></div>
-
-<div class="card tool"><div class="icon">📐</div><h3>Equal Angle Weight</h3><div class="formgrid">
-<div><label>Leg A (mm)</label><input id="aa" type="number" value="50"></div><div><label>Leg B (mm)</label><input id="ab" type="number" value="50"></div>
-<div><label>Thickness (mm)</label><input id="at" type="number" value="5"></div><div><label>Length (m)</label><input id="al" type="number" value="6"></div></div><button onclick="angle()">Calculate</button><div class="result" id="ar">—</div></div>
-
-<div class="card tool"><div class="icon">🔧</div><h3>Channel Weight</h3><div class="formgrid">
-<div><label>Overall Height (mm)</label><input id="ch" type="number" value="100"></div><div><label>Flange Width (mm)</label><input id="cw" type="number" value="50"></div>
-<div><label>Thickness (mm)</label><input id="ct" type="number" value="5"></div><div><label>Length (m)</label><input id="cl" type="number" value="6"></div></div><button onclick="channel()">Calculate</button><div class="result" id="cr">—</div></div>
-
-<div class="card tool"><div class="icon">🔵</div><h3>Round Bar Weight</h3><div class="formgrid">
-<div><label>Diameter (mm)</label><input id="rd" type="number" value="25"></div><div><label>Length (m)</label><input id="rl" type="number" value="6"></div>
-<div><label>Qty</label><input id="rq" type="number" value="1"></div></div><button onclick="roundbar()">Calculate</button><div class="result" id="rr">—</div></div>
-
-<div class="card tool"><div class="icon">🔥</div><h3>Welding Electrode</h3><div class="formgrid">
-<div><label>Weld length (m)</label><input id="wl" type="number" value="10"></div><div><label>Weld size (mm)</label><input id="ws" type="number" value="6"></div>
-<div><label>Electrode kg / m³</label><input id="we" type="number" value="7850"></div><div><label>Efficiency %</label><input id="wf" type="number" value="65"></div></div><button onclick="electrode()">Estimate</button><div class="result" id="wr">—</div></div>
-
-<div class="card tool"><div class="icon">🧵</div><h3>MIG Wire Consumption</h3><div class="formgrid">
-<div><label>Weld length (m)</label><input id="ml" type="number" value="10"></div><div><label>Weld area (mm²)</label><input id="ma" type="number" value="18"></div>
-<div><label>Steel density kg/m³</label><input id="md" type="number" value="7850"></div><div><label>Efficiency %</label><input id="mf" type="number" value="90"></div></div><button onclick="mig()">Estimate</button><div class="result" id="mr">—</div></div>
-
-<div class="card tool"><div class="icon">💰</div><h3>Fabrication Cost</h3><div class="formgrid">
-<div><label>Material ₹</label><input id="fc1" type="number" value="10000"></div><div><label>Labour ₹</label><input id="fc2" type="number" value="5000"></div>
-<div><label>Consumables ₹</label><input id="fc3" type="number" value="1500"></div><div><label>Overhead ₹</label><input id="fc4" type="number" value="1000"></div></div><button onclick="fabcost()">Calculate</button><div class="result" id="fcr">—</div></div>
-
-<div class="card tool"><div class="icon">🧾</div><h3>GST Calculator</h3><div class="formgrid">
-<div><label>Base Amount ₹</label><input id="ga" type="number" value="10000"></div><div><label>GST %</label><input id="gp" type="number" value="18"></div></div><button onclick="gst()">Calculate</button><div class="result" id="gr">—</div></div>
-
-<div class="card tool"><div class="icon">📦</div><h3>Material Cost</h3><div class="formgrid">
-<div><label>Quantity</label><input id="mq" type="number" value="100"></div><div><label>Rate ₹</label><input id="mrp" type="number" value="65"></div>
-<div><label>Wastage %</label><input id="mw" type="number" value="3"></div></div><button onclick="matcost()">Calculate</button><div class="result" id="mcr">—</div></div>
-
-</div></section>
+<section class="container" id="why">
+<div class="feature">
+<div><h2>Built for real workshop work.</h2><p>Our goal is simple: make everyday fabrication calculations easier to understand and faster to perform. Use the tools for estimates, then verify critical dimensions and material data against applicable standards and actual job conditions.</p></div>
+<div class="feature-list"><div>✓ Simple inputs</div><div>✓ Instant results</div><div>✓ Mobile friendly</div><div>✓ Practical formulas</div><div>✓ Hindi-friendly content</div><div>✓ Free tools</div></div>
+</div>
+</section>
 
 <section class="container" id="guides">
-<div class="section-head"><div><h2>📚 Practical Guides</h2><p>Real workshop problems ko simple language mein samjhein.</p></div></div>
-<div class="grid">
-<div class="card guide"><h3>MS Plate ka Weight Kaise Nikale?</h3><p>Length × width × thickness aur steel density se approximate weight calculation.</p><a href="#">Guide →</a></div>
-<div class="card guide"><h3>MIG Wire Consumption Kaise Calculate Kare?</h3><p>Weld size, length aur deposition efficiency ko use karke estimate.</p><a href="#">Guide →</a></div>
-<div class="card guide"><h3>Fabrication Fixture Kya Hota Hai?</h3><p>Fixture ka purpose, practical examples aur workshop applications.</p><a href="#">Guide →</a></div>
-<div class="card guide"><h3>Fabrication Costing Kaise Kare?</h3><p>Material, labour, consumables aur overhead ko costing mein include karne ka method.</p><a href="#">Guide →</a></div>
-<div class="card guide"><h3>Pipe Weight Calculation</h3><p>Outside diameter, thickness aur length ke basis par approximate pipe weight.</p><a href="#">Guide →</a></div>
-<div class="card guide"><h3>Welding Electrode Consumption</h3><p>Weld size aur length ke basis par approximate consumable estimate.</p><a href="#">Guide →</a></div>
-</div></section>
+<div class="section-top"><div><h2>Practical Fabrication Guides</h2><p>Learn the calculation, not just the answer.</p></div></div>
+<div class="guide-grid">
+<div class="card guide"><span class="tag">MATERIAL</span><h3>MS Plate Weight Kaise Nikale?</h3><p>Understand the density-based formula with a worked example.</p><a class="open" href="#">Read Guide →</a></div>
+<div class="card guide"><span class="tag">WELDING</span><h3>MIG Wire Consumption</h3><p>See how weld size, length and deposition efficiency affect consumption.</p><a class="open" href="#">Read Guide →</a></div>
+<div class="card guide"><span class="tag">WORKSHOP</span><h3>Fabrication Fixture Kya Hai?</h3><p>Understand fixtures, their purpose and common workshop applications.</p><a class="open" href="#">Read Guide →</a></div>
+<div class="card guide"><span class="tag">COSTING</span><h3>Fabrication Job Costing</h3><p>Break a job into material, labour, consumables and overhead.</p><a class="open" href="#">Read Guide →</a></div>
+<div class="card guide"><span class="tag">STEEL</span><h3>Pipe Weight Calculation</h3><p>Learn the basic calculation using OD, thickness and length.</p><a class="open" href="#">Read Guide →</a></div>
+<div class="card guide"><span class="tag">WELDING</span><h3>Electrode Consumption</h3><p>Understand approximate consumable estimation for weld work.</p><a class="open" href="#">Read Guide →</a></div>
+</div>
+</section>
 
-<section class="container" id="about"><div class="card"><h2>About Fabrication Tools Hindi</h2><p>Yeh website fabrication, welding aur workshop calculations ko simple Hindi mein samjhane ke liye banayi gayi hai. Calculators approximate results dete hain; actual material standards aur site conditions ke hisaab se values verify karein.</p></div></section>
+<section class="container" id="contact"><div class="cta"><div><h2>Have a calculation in mind?</h2><p>More fabrication tools and practical guides can be added as the site grows.</p></div><a class="btn primary" href="mailto:contact@example.com">Contact Us</a></div></section>
 
-<footer><strong>Fabrication Tools Hindi</strong><br><br>Practical engineering calculators & guides.<br><small>© 2026 Fabrication Tools Hindi</small></footer>
+<footer><div class="footer-inner"><div><div class="footer-brand">Fabrication Tools Hindi</div><p>Practical engineering calculators & fabrication guides.</p></div><div>© 2026 Fabrication Tools Hindi</div></div></footer>
+
+<!-- Calculator modal -->
+<div id="modal" style="display:none;position:fixed;inset:0;background:#020617aa;z-index:100;padding:20px;overflow:auto">
+<div style="max-width:650px;margin:70px auto;background:white;border-radius:18px;padding:25px;position:relative">
+<button onclick="closeCalc()" style="position:absolute;right:18px;top:18px;background:#e5e7eb;color:#111">✕</button>
+<h2 id="modalTitle"></h2><div id="modalBody"></div>
+</div></div>
 
 <script>
-const v=id=>parseFloat(document.getElementById(id).value)||0;
-function show(id,text){document.getElementById(id).innerText=text}
-function plate(){show('pr','Approx. Weight: '+(v('pl')*v('pw')*v('pt')*7.85/1e6*v('pq')).toFixed(2)+' kg')}
-function pipe(){let od=v('od'),t=v('pith'),len=v('pil'),q=v('piq');let area=Math.PI/4*(od*od-(od-2*t)**2);show('pir','Approx. Weight: '+(area*len*7.85/1000*q).toFixed(2)+' kg')}
-function angle(){let a=v('aa'),b=v('ab'),t=v('at'),l=v('al');let area=(a*t+b*t-t*t);show('ar','Approx. Weight: '+(area*l*7.85/1000).toFixed(2)+' kg')}
-function channel(){let h=v('ch'),w=v('cw'),t=v('ct'),l=v('cl');let area=(h*t+2*w*t-2*t*t);show('cr','Approx. Weight: '+(area*l*7.85/1000).toFixed(2)+' kg')}
-function roundbar(){show('rr','Approx. Weight: '+(Math.PI*v('rd')**2/4*v('rl')*7.85/1000*v('rq')).toFixed(2)+' kg')}
-function electrode(){let volume=v('wl')*v('ws')*v('ws')/2;let kg=volume*v('we')/1e6/(v('wf')/100);show('wr','Estimated electrode: '+kg.toFixed(2)+' kg')}
-function mig(){let kg=v('ml')*v('ma')*v('md')/1e6/(v('mf')/100);show('mr','Estimated MIG wire: '+kg.toFixed(2)+' kg')}
-function fabcost(){show('fcr','Estimated Total Cost: ₹'+(v('fc1')+v('fc2')+v('fc3')+v('fc4')).toFixed(2))}
-function gst(){let a=v('ga'),g=v('gp'),t=a*g/100;show('gr','GST: ₹'+t.toFixed(2)+' | Total: ₹'+(a+t).toFixed(2))}
-function matcost(){let base=v('mq')*v('mrp'),w=base*v('mw')/100;show('mcr','Material + Wastage: ₹'+(base+w).toFixed(2))}
-plate();pipe();angle();channel();roundbar();electrode();mig();fabcost();gst();matcost();
+const $=id=>document.getElementById(id);
+function filterTools(){let q=$('search').value.toLowerCase();document.querySelectorAll('.tool').forEach(c=>c.style.display=c.dataset.name.includes(q)?'block':'none')}
+const fields={plate:[['Length (mm)','pl',2000],['Width (mm)','pw',1000],['Thickness (mm)','pt',12],['Quantity','pq',1]],pipe:[['OD (mm)','od',60],['Thickness (mm)','pith',3],['Length (m)','pil',6],['Quantity','piq',1]],angle:[['Leg A (mm)','aa',50],['Leg B (mm)','ab',50],['Thickness (mm)','at',5],['Length (m)','al',6]],channel:[['Height (mm)','ch',100],['Flange Width (mm)','cw',50],['Thickness (mm)','ct',5],['Length (m)','cl',6]],round:[['Diameter (mm)','rd',25],['Length (m)','rl',6],['Quantity','rq',1]],electrode:[['Weld length (m)','wl',10],['Weld size (mm)','ws',6],['Efficiency %','wf',65]],mig:[['Weld length (m)','ml',10],['Weld area (mm²)','ma',18],['Efficiency %','mf',90]],cost:[['Material ₹','fc1',10000],['Labour ₹','fc2',5000],['Consumables ₹','fc3',1500],['Overhead ₹','fc4',1000]],gst:[['Base Amount ₹','ga',10000],['GST %','gp',18]],material:[['Quantity','mq',100],['Rate ₹','mrp',65],['Wastage %','mw',3]]};
+function openCalc(type,title){$('modalTitle').innerText=title;$('modalBody').innerHTML='<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">'+fields[type].map(f=>`<label style="font-size:13px;font-weight:700">${f[0]}<input id="x_${f[1]}" type="number" value="${f[2]}" style="width:100%;padding:11px;margin-top:5px;border:1px solid #ddd;border-radius:8px"></label>`).join('')+'</div><button onclick="runCalc(\''+type+'\')" style="margin-top:18px;background:#2563eb">Calculate</button><div id="out" style="margin-top:15px;background:#eff6ff;padding:15px;border-radius:9px;font-weight:800">Enter values and calculate.</div>';$('modal').style.display='block'}
+function closeCalc(){$('modal').style.display='none'}
+function x(id){return parseFloat($('x_'+id).value)||0}
+function runCalc(t){let r='';
+if(t==='plate')r='Approx. Weight: '+(x('pl')*x('pw')*x('pt')*7.85/1e6*x('pq')).toFixed(2)+' kg';
+if(t==='pipe'){let a=Math.PI/4*(x('od')**2-(x('od')-2*x('pith'))**2);r='Approx. Weight: '+(a*x('pil')*7.85/1000*x('piq')).toFixed(2)+' kg'}
+if(t==='angle')r='Approx. Weight: '+((x('aa')*x('at')+x('ab')*x('at')-x('at')**2)*x('al')*7.85/1000).toFixed(2)+' kg';
+if(t==='channel')r='Approx. Weight: '+((x('ch')*x('ct')+2*x('cw')*x('ct')-2*x('ct')**2)*x('cl')*7.85/1000).toFixed(2)+' kg';
+if(t==='round')r='Approx. Weight: '+(Math.PI*x('rd')**2/4*x('rl')*7.85/1000*x('rq')).toFixed(2)+' kg';
+if(t==='electrode')r='Estimated Electrode: '+((x('wl')*x('ws')*x('ws')/2)*7850/1e6/(x('wf')/100)).toFixed(2)+' kg';
+if(t==='mig')r='Estimated MIG Wire: '+(x('ml')*x('ma')*7850/1e6/(x('mf')/100)).toFixed(2)+' kg';
+if(t==='cost')r='Estimated Total Cost: ₹'+(x('fc1')+x('fc2')+x('fc3')+x('fc4')).toFixed(2);
+if(t==='gst'){let tax=x('ga')*x('gp')/100;r='GST: ₹'+tax.toFixed(2)+' | Total: ₹'+(x('ga')+tax).toFixed(2)}
+if(t==='material'){let base=x('mq')*x('mrp');r='Material + Wastage: ₹'+(base+base*x('mw')/100).toFixed(2)}
+$('out').innerText=r}
+document.querySelectorAll('.open').forEach(a=>a.addEventListener('click',e=>{let href=a.getAttribute('href');if(href&&href.startsWith('#')){e.preventDefault();let t=href.slice(1);let title=a.closest('.card').querySelector('h3').innerText;openCalc(t,title)}}));
 </script>
 </body></html>
