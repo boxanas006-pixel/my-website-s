@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fabrication Tools Hindi</title>
+<meta name="description" content="Fabrication और engineering के practical guides और calculators in Hindi.">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f5f7fa;color:#17202a}
+header{background:#17202a;color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font-size:23px;font-weight:700}.nav a{color:white;text-decoration:none;margin-left:20px}
+.hero{padding:65px 6%;background:linear-gradient(135deg,#1f2937,#334155);color:white}
+.hero h1{font-size:42px;max-width:800px;margin:0 0 15px}.hero p{font-size:18px;max-width:700px;line-height:1.6}
+.container{max-width:1150px;margin:auto;padding:40px 20px}.title{font-size:30px;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:white;border-radius:14px;padding:22px;box-shadow:0 5px 18px #00000012}
+.card h3{margin-top:0}.card p{color:#5b6570;line-height:1.5}
+button{background:#e67e22;color:white;border:0;border-radius:8px;padding:12px 18px;font-weight:bold;cursor:pointer}
+input,select{width:100%;padding:11px;margin:7px 0 13px;border:1px solid #ccd3da;border-radius:7px}
+.result{margin-top:15px;background:#eef6ff;padding:14px;border-radius:8px;font-weight:bold}
+footer{background:#17202a;color:#cbd5e1;padding:25px 6%;margin-top:30px}
+@media(max-width:650px){.hero h1{font-size:31px}.nav{display:none}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">⚙️ Fabrication Tools Hindi</div>
+<div class="nav"><a href="#calculators">Calculators</a><a href="#guides">Guides</a></div>
+</header>
+
+<section class="hero">
+<h1>Fabrication & Engineering Tools — Hindi Mein</h1>
+<p>MS plate, pipe, welding aur workshop calculations ke saath practical fabrication guides. Simple tools, real calculations.</p>
+<a href="#calculators"><button>Calculators Dekhein</button></a>
+</section>
+
+<main class="container" id="calculators">
+<h2 class="title">🔧 Fabrication Calculators</h2>
+<div class="grid">
+<div class="card">
+<h3>MS Plate Weight Calculator</h3>
+<label>Length (mm)</label><input id="length" type="number" value="2000">
+<label>Width (mm)</label><input id="width" type="number" value="1000">
+<label>Thickness (mm)</label><input id="thickness" type="number" value="12">
+<label>Quantity</label><input id="qty" type="number" value="1">
+<button onclick="calcPlate()">Calculate Weight</button>
+<div class="result" id="plateResult">Result yahan dikhega</div>
+</div>
+
+<div class="card">
+<h3>MS Plate Cost Calculator</h3>
+<label>Weight (kg)</label><input id="weight" type="number" value="188.4">
+<label>Rate per kg (₹)</label><input id="rate" type="number" value="65">
+<button onclick="calcCost()">Calculate Cost</button>
+<div class="result" id="costResult">Result yahan dikhega</div>
+</div>
+
+<div class="card">
+<h3>GST Calculator</h3>
+<label>Amount (₹)</label><input id="amount" type="number" value="10000">
+<label>GST %</label><input id="gst" type="number" value="18">
+<button onclick="calcGST()">Calculate GST</button>
+<div class="result" id="gstResult">Result yahan dikhega</div>
+</div>
+</div>
+</main>
+
+<section class="container" id="guides">
+<h2 class="title">📚 Practical Guides</h2>
+<div class="grid">
+<div class="card"><h3>MS Plate ka Weight Kaise Nikale?</h3><p>Length, width aur thickness se plate ka approximate weight calculate karne ka practical method.</p></div>
+<div class="card"><h3>MIG Wire Consumption</h3><p>Fabrication job mein MIG wire consumption ko estimate karne ka practical approach.</p></div>
+<div class="card"><h3>Fabrication Fixture Kya Hota Hai?</h3><p>Fixture ka purpose, examples aur workshop mein iska practical use.</p></div>
+<div class="card"><h3>Welding Electrode Consumption</h3><p>Job requirement ke hisaab se electrode consumption estimate karne ke basic methods.</p></div>
+<div class="card"><h3>Pipe Weight Calculation</h3><p>Pipe size, thickness aur length ke basis par weight calculation ka guide.</p></div>
+<div class="card"><h3>Fabrication Costing</h3><p>Material, labour, welding aur overhead ko quotation mein consider karne ka framework.</p></div>
+</div>
+</section>
+
+<footer>© 2026 Fabrication Tools Hindi · Practical Engineering Resources</footer>
+
+<script>
+function calcPlate(){
+ let l=+document.getElementById('length').value,w=+document.getElementById('width').value,t=+document.getElementById('thickness').value,q=+document.getElementById('qty').value;
+ let kg=l*w*t*7.85/1000000*q;
+ document.getElementById('plateResult').innerText='Approx. Weight: '+kg.toFixed(2)+' kg';
+}
+function calcCost(){
+ let w=+document.getElementById('weight').value,r=+document.getElementById('rate').value;
+ document.getElementById('costResult').innerText='Estimated Material Cost: ₹'+(w*r).toFixed(2);
+}
+function calcGST(){
+ let a=+document.getElementById('amount').value,g=+document.getElementById('gst').value;
+ let tax=a*g/100;
+ document.getElementById('gstResult').innerText='GST: ₹'+tax.toFixed(2)+' | Total: ₹'+(a+tax).toFixed(2);
+}
+calcPlate();calcCost();calcGST();
+</script>
+</body>
+</html>
